@@ -1,3 +1,2 @@
-# M3-development
+# eigentliches Projekt im Branch 'master'!
 
-**eigentliches Projekt im Branch 'master'!**
