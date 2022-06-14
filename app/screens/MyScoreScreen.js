@@ -20,26 +20,26 @@ function MyScoreScreen({navigation}) {
 						Hallo Umweltheld:in,
 					</Text>
 					<Text style={styles.textStandard}>
-						Wenn Du Unternehmen zu deinen Favoriten hinzugefügt hast, dann findest du hier einige nette statistiken für
+						Wenn Du Unternehmen zu deinen Favoriten hinzugefügt hast, dann findest du hier einige nette Statistiken für
 						Dich.
 					</Text>
 					<Text style={styles.textStandardBig}>
 						Du hast aktuell {favourites.length} Unternehmen als Favoriten!
 					</Text>
 					<Text style={styles.textStandardVeryBig}>
-						Dein durchschnittlicher Green Index über alle deine Favoriten
+						Dein durchschnittlicher Green Index über alle deine Favoriten ist:
 					</Text>
 					<Text style={styles.valueBig}>
 						{isNaN(FavoritesAverageCalculate(favourites, 'greenIndex')) ? "leer" : FavoritesAverageCalculate(favourites, 'greenIndex')}
 					</Text>
 					<Text style={styles.textStandard}>
-						Was Emissionen angeht sieht es bei dir aktuell so aus
+						Was Emissionen angeht sieht es bei dir aktuell so aus:
 					</Text>
 					<Text style={styles.valueStandard}>
 						{isNaN(FavoritesAverageCalculate(favourites, 'emissions')) ? "…" : FavoritesAverageCalculate(favourites, 'emissions')}
 					</Text>
 					<Text style={styles.textStandard}>
-						schon ganz gut aber es ist doch immer noch ein bisschen Luft nach Oben damit unsere Athmosphäre sauber
+						Schon ganz gut aber es ist doch immer noch ein bisschen Luft nach oben, damit unsere Atmosphäre sauber
 						bleibt.
 					</Text>
 					<Text style={styles.textStandard}>
@@ -50,13 +50,13 @@ function MyScoreScreen({navigation}) {
 					</Text>
 					<Text style={styles.textStandard}>
 						So aktiv sind Deine Unternehmen im regionalen Umfeld, indem sie mit lokalen Zulieferern zusammenarbeiten
-						und so einen weiteren Schritt in Richtung Nachhaltigkeit gehen.
+						und so einen weiteren Schritt in Richtung Nachhaltigkeit gehen:
 					</Text>
 					<Text style={styles.valueStandard}>
 						{isNaN(FavoritesAverageCalculate(favourites, 'regionalSuppliers')) ? "…" : FavoritesAverageCalculate(favourites, 'regionalSuppliers')}
 					</Text>
 					<Text style={styles.textStandard}>
-						Auch indirekt tragen Deine Unternehemen eine große verantwortung, etwa wie was sie mit ihrem Gewinn machen
+						Auch indirekt tragen Deine Unternehemen eine große Verantwortung, etwa was sie mit ihrem Gewinn machen,
 					</Text>
 					<Text style={styles.valueStandard}>
 						{isNaN(FavoritesAverageCalculate(favourites, 'greenInvestment')) ? "…" : FavoritesAverageCalculate(favourites, 'greenInvestment')}
