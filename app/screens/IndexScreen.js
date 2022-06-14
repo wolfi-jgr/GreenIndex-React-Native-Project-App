@@ -105,7 +105,7 @@ function IndexScreen({navigation, route}) {
 						<IconButton
 							style={{alignSelf: 'flex-end'}}
 							icon={iconName}
-							size={55}
+							size={50}
 							onPress={() => {
 								if (iconName === "star-outline") {
 									setIconName("star")
@@ -166,23 +166,30 @@ function IndexScreen({navigation, route}) {
 				hideAxesAndRules={true}
 			/>
 			{/*barcharts to display the data and to give better visualisation*/}
-
-			<BarChart
+			<View style={styles.barChartView}>
+				<Text style={styles.TextChart}>Index Kriterien</Text>
+				<BarChart
 				showFractionalValue
 				showYAxisIndices
 				maxValue={10}
 				data={barData1}
 				isAnimated
 				disablePress
-			/>
-			<BarChart
+				/>
+			</View>
+			<Text></Text>
+			<View style={styles.barChartView}>
+				<Text style={styles.TextChart}>Index Kriterien</Text>
+				<BarChart
 				showFractionalValue
 				showYAxisIndices
 				maxValue={10}
 				data={barData2}
 				isAnimated
 				disablePress
-			/>
+				/>
+			</View>
+
 			<Text></Text>
 		</ScrollView>
 	);
@@ -201,8 +208,17 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 15,
 		paddingVertical: 20
 	},
+	barChartView: {
+		backgroundColor: '#FAE3D9',
+		borderTopRightRadius: 20,
+		borderTopLeftRadius: 20,
+		borderBottomRightRadius: 20,
+		borderBottomLeftRadius: 20,
+		paddingHorizontal: 3,
+		paddingVertical: 5
+	},
 	company: {
-		fontSize: 55,
+		fontSize: 50,
 		fontWeight: "bold",
 		color: 'black',
 		marginBottom: '5%'
@@ -217,6 +233,11 @@ const styles = StyleSheet.create({
 		color: 'black',
 		justifyContent: "flex-start",
 		marginBottom: '3%'
+	},
+	TextChart: {
+		alignSelf: "center",
+		fontSize: 16,
+		fontWeight: "bold"
 	},
 })
 

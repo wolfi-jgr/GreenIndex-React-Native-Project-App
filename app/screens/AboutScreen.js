@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 		//backgroundColor: '#61C0BF'
 	},
 	textHeadline: {
-		fontSize: 30,
+		fontSize: 25,
 		fontWeight: "bold",
 		color: 'black'
 	},
@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
 		backgroundColor: '#BBDED6',
 		borderTopRightRadius: 20,
 		borderTopLeftRadius: 20,
-		borderWidth: 0
 	},
 	button: {
 		alignSelf: 'flex-start',
